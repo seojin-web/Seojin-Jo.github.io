@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding | Seojin Jo</title>
+    <!-- 기준 경로를 프로젝트 루트 바로 아래로 설정 -->
+    <base href="../">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+  </head>
+<body>
+  <div id="cursor" class="custom-cursor"></div>
+  <header class="site-header container">
+    <div class="header-left">
+      <a href="../main.html" class="logo">Seojin Jo</a>
+    </div>
+    <div class="header-center category-nav">
+      <a href="works/branding.html">Branding</a>
+      <a href="works/graphic.html">Graphic Design</a>
+      <a href="works/motion.html" class="active">Motion Graphics</a>
+    </div>
+    <div class="header-right">
+      <a href="mailto:seojin@example.com" class="header-link">seojin@example.com</a>
+      <a href="https://instagram.com/yourhandle" class="header-link">@yourhandle</a>
+    </div>
+  </header>
+  <main class="content works-container container">
+    <aside class="works-list">
+      <ul>
+        <li><a href="#mproj1">Motion Project 1</a></li>
+        <li><a href="#mproj2">Motion Project 2</a></li>
+      </ul>
+    </aside>
+    <section class="works-gallery works-gallery--video">
+      <div id="mproj1" class="gallery-item">
+          <video
+          class="fixed-width-video"
+          id="video1"
+          controls       <!-- 컨트롤 UI 표시 -->
+          preload="none" <!-- 로드 지연 -->
+          poster="poster.jpg"  <!-- 재생 전 썸네일 -->
+          style="cursor: pointer;"
+          >
+          <source src="assets/videos/water stone.MP4" type="video/mp4">
+          <source src="videos/sample.webm" type="video/webm">
+          이 브라우저는 HTML5 video 태그를 지원하지 않습니다.
+          </video>
+        </div>
+      </div>
+      <div id="mproj2" class="gallery-item">
+        <video
+        class="fixed-width-video"
+        id="video2"
+        controls       <!-- 컨트롤 UI 표시 -->
+        preload="none" <!-- 로드 지연 -->
+        poster="poster.jpg"  <!-- 재생 전 썸네일 -->
+        style="cursor: pointer;"
+        >
+        <source src="assets/videos/misty moon light.mp4" type="video/mp4">
+        <source src="videos/sample.webm" type="video/webm">
+        이 브라우저는 HTML5 video 태그를 지원하지 않습니다.
+        </video>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer container">
+    <p>&copy; 2025 Seojin Jo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
