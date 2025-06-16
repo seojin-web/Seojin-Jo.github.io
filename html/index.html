@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Seojin Jo – Welcome</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Seojin Jo – Portfolio</title>
+  <base href="./">
   <link rel="stylesheet" href="../css/style.css">
   <script defer src="../js/script.js"></script>
 </head>
-<body class="landing-container">
-  <a href="main.html" class="explore-btn">Explore My Portfolio</a>
+<body>
+  <!-- Custom Cursor -->
+  <div id="cursor" class="custom-cursor"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+
+    <canvas id="bubble-canvas"></canvas>
+
+    <div class="hero-content">
+      <h1>Seojin Jo</h1>
+      <p>Immersive brand experiences<br> through Design, Motion, and Story</p>
+      <button id="enter-site">come in!</button>
+    </div>
+  </section>
+
+  <!-- Main Site Content: 숨겨진 상태로 시작 -->
+  <div id="main-site" style="display: none;">
+    
+    <!-- Header -->
+    <header class="site-header container">
+      <div class="header-left">
+        <a href="main.html" class="logo">Seojin Jo</a>
+      </div>
+      <div class="header-center">
+        <p class="header-about">crafting immersive brand experiences through design, motion, and 3D.</p>
+      </div>
+      <div class="header-right">
+        <a href="mailto:seojin@example.com" class="header-link">seojin@example.com</a>
+        <a href="https://www.instagram.com/toktokggi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="header-link">@yourhandle</a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="content category-layout">
+      <section id="branding" class="category">
+        <h2><a href="works/branding.html">Branding</a></h2>
+      </section>
+      <section id="graphic" class="category">
+        <h2><a href="works/graphic.html">Graphic Design</a></h2>
+      </section>
+      <section id="motion" class="category">
+        <h2><a href="works/motion.html">Motion Graphics</a></h2>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer container">
+      <div class="clients">
+        <h4>wellcome</h4>
+        <ul class="client-list">
+          <li>BX</li><li>Graphics</li><li>3D</li>
+          <li>based</li><li>in</li><li>seoul</li>
+          <li>thank</li><li>u 4</li><li>visiting</li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <div class="info-col">
+          <h5>Social</h5>
+          <a href="https://www.instagram.com/toktokggi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+          <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+        </div>
+        <div class="info-col">
+          <h5>Address</h5>
+          <p>Seoul, South Korea</p>
+        </div>
+        <div class="info-col">
+          <h5>Contact</h5>
+          <a href="mailto:seojin@example.com">Email</a>
+        </div>
+        <div class="info-col">
+          <h5>Newsletter</h5>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 Seojin Jo. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 </body>
-</html>
+
+  </html>
